@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>All Quotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+</head>
+<body>
+    <h1>These are all Quotes</h1>
+
+
+    <% JSON.stringify(users) %>
+    <% for (var i in users) { %>
+        <h5> " <%= users[i].quote %> " </h5>
+        <% console.log(users[i]) %>
+        <p> -<%= users[i].name %> at <%= users[i].createdAt %> </p>
+    <% } %> 
+
+
+
+
+</body>
+</html>
